@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda & Media Sosial</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Navigation Bar */
+    nav {
+      width: 100%;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      padding: 15px 20px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #111;
+      font-weight: 700;
+      font-size: 16px;
+      border-bottom: 2px solid #000;
+      padding-bottom: 4px;
+    }
+
+    /* Main Container */
+    .container {
+      background: #ffffff;
+      margin: 25px 15px 40px;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      max-width: 400px;
+      width: calc(100% - 30px);
+      text-align: center;
+    }
+
+    /* Foto Profil/Atas */
+    .profile-img-container {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #ffffff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .profile-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    /* Seksi Pemutar Audio */
+    .audio-box {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      border: 1px solid #e9ecef;
+    }
+
+    .audio-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    audio {
+      width: 100%;
+      height: 40px;
+      outline: none;
+    }
+
+    /* Group Tombol Sosmed */
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #777;
+      text-align: left;
+      margin-bottom: 4px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+
+    .btn-tiktok {
+      background-color: #000000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu Beranda -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="nav-link">Beranda</a>
+    </div>
+  </nav>
+
+  <!-- Konten Utama -->
+  <div class="container">
+    
+    <!-- Foto Bagian Atas -->
+    <div class="IMG_20260709_182802_425.jpg
+">
+      <img src="IMG_20260709_182802_425.jpg
+" alt="Foto Profile">
+    </div>
+
+    <h1 class="profile-title">Selamat Datang!</h1>
+
+    <!-- File Lagu Send My Love - Adele -->
+    <div class="audio-box">
+      <div class="audio-title">🎵 Adele - Send My Love (To Your New Lover)</div>
+      <audio controls>
+        <source src="send-my-love.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung pemutar audio.
+      </audio>
+    </div>
+
+    <!-- Tombol Media Sosial -->
+    <div class="btn-group">
+      <div class="btn-label">Temukan Saya:</div>
+      
+      <a href="https://www.instagram.com/prhnn224?igsh=aGVjMDR0NzUydmk=" target="_blank" class="btn btn-instagram">
+        Instagram (@prhnn224)
+      </a>
+
+      <a href="https://www.tiktok.com/@aan_2234" target="_blank" class="btn btn-tiktok">
+        TikTok (@aan_2234)
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
